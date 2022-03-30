@@ -1,0 +1,87 @@
+/* logo */
+
+.square{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+}
+.circle-black{
+    width: 100px;
+	height: 100px;
+    position:relative;
+	background: black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.circle{
+    width: 97px;
+	height: 97px;
+    position:relative;
+    top: 1.5px;
+    left: 1.5px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.logo-a{
+    position: absolute;
+    left: 13px;
+    top: 3px;
+	width: 10px;
+    height: 0;
+    border-bottom: 80px solid black;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+.logo-a-inner{
+    position: absolute;
+    left: 28px;
+    top: 27px;
+	width: 0;
+    height: 0;
+    border-bottom: 56px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.circle-inner{
+    width: 37px;
+	height: 37px;
+    position:absolute;
+    top: 35px;
+    left: 16px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.circle-p-outline{
+    width: 32px;
+	height: 32px;
+    position:absolute;
+    top: 37px;
+    left:18px;
+	background: black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.circle-p{
+    width: 28px;
+	height: 28px;
+    position:absolute;
+    top: 39px;
+    left:20px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.line{
+    position: absolute;
+    width: 35px;
+    left: 30px;
+    top: 53px;
+    border-bottom: 10px solid black;
+}
