@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="ru">
@@ -9,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/logo.css">
-    <script defer src="js/flipping.js"></script>
+    <link rel="stylesheet" href="css/robot.css">
     <title>рА</title>
   </head>
   <body>
@@ -44,26 +43,36 @@
     <main>
      <section class="content-overflow">
        <h1 class="text-title">
-         русский авангард
+         задание - рисунок css
        </h1>
-        <p class="content">
-          <span style="color:red">Р</span>усский авангард — движение самых разнообразных художников, которых объединила идея связать искусство с жизнью. 
-          Авангардисты хотели сделать творчество главной человеческой ценностью. Они были убеждены в том, что искусство 
-          должно проявляться не только на картинах, но и в быту, в повседневной реальности. Эти художники были радикальны, 
-          они стремились изменить существующий порядок и избавиться от академических канонов живописи. Русский авангард достиг 
-          своего пика в период между 1917 и 1932 годами, пока авангардистские идеи не столкнулись с новой государственной 
-          тенденцией социалистического реализма. Наиболее яркие примеры этого направления представлены в карусели ниже:
-          <br>
-          <section class="image-holder">
-            <div class="hint" data-title="Нажмите для перелистывания">
-              <img src="img/tatlin_plot.jpg" id="image" onclick="ImgFlip()">
+        <section class="content">
+          <div class="robot">
+            <div class="hat">
+              <div class="hat horn-left"></div>
+              <div class="hat horn-right"></div>
             </div>
-          </section>
-        </p>
+            <div class="head">
+                <div class="eye" style = "left: 5px"></div>
+                <div class="eye" style = "left: 20px"></div>
+                <div class="eye" style = "left: 35px"></div>
+            </div>
+            <div class="rect">
+                <div class="inner-circle"></div>
+                <div class="strip" style = "top: 48px"></div>
+                <div class="strip" style = "top: 54px"></div>
+                <div class="strip" style = "top: 60px"></div>
+                <div class="arm-right"></div>
+                <div class="arm-left"></div>
+                <div class="triangle" style = "left: -20px"></div>
+                <div class="triangle" style = "left: 54px"></div>
+            </div>
+            <div class="bottom"></div>
+          </div>
+        </section>
       </section>
     </main>
     <footer>
       <p>© 2022 рыжов<span style="color:red">А</span>настасия</p>    
     </footer>
   </body>
-</html> 
+</html>
