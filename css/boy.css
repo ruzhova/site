@@ -1,0 +1,127 @@
+.flexbox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* начальное состояние всех элементов */
+
+.first, .second, .third, .forth, .ball, .brick {
+    position: absolute;
+}
+.second, .third, .forth{
+    opacity: 0;
+}
+.second, .third{
+    transform: translateX(80px);
+}
+.third{
+    right: 120px;
+    bottom: 80px;
+    transform: rotate(-60deg);
+}
+.forth{
+    transform: translateX(50px)
+}
+.third, .ball, .brick{
+    opacity: 0;
+    transition: 0.5s;
+}
+.ball, .brick{
+    top: 75px;
+    right: 140px;
+    font-weight: bold;
+}
+
+/* состояние элементов при наведении мышкой */
+
+.flexbox:hover .first{
+    opacity: 0;
+}
+.flexbox:hover .second, 
+.flexbox:hover .third,
+.flexbox:hover .ball {
+    opacity: 1;
+}
+
+/* состояние элементов при нажатии */
+
+.flexbox:active .second,
+.flexbox:active .ball{
+    opacity: 0;
+}
+
+.flexbox:active .forth,
+.flexbox:active .brick{
+    opacity: 1;
+}
+
+/* анимация для кирпича */
+
+@keyframes rotate {
+    /* кирпич вращается */
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(90deg);
+    }
+    20%{
+        transform: rotate(180deg);
+    }
+    30%{
+        transform: rotate(270deg);
+    }
+    40%{
+        transform: rotate(360deg);
+    }
+    /* кирпич улетает */
+    100%{
+        transform: translate(210px, -210px);
+    }
+}
+
+/* анимация для мальчика */
+
+@keyframes shaking {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(3%);
+    }
+    50%{
+        transform: translateX(-3%);
+    }
+    75%{
+        transform: translateX(3%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.flexbox:active .third{
+    animation: rotate 0.8s ease-in forwards;
+}
+.flexbox:active {
+    animation: shaking 0.6s linear;
+}
+
+@media screen and (max-width: 800px) {
+    .flexbox{
+        width: 400px;
+    }
+    .third{
+        right: 70px;
+    }
+    .ball, .brick{
+        right: 90px;
+        font-weight: bold;
+    }
+}
