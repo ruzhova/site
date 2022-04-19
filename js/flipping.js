@@ -8,3 +8,11 @@ function ImgFlip() {
     }
     image.src = imgs[i];
 }
+
+function ImgFlipBack() {
+    if (image.src.match()){
+        i--;
+        i%=imgs.length;
+    }
+    image.src = imgs[i];
+}

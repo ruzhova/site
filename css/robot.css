@@ -3,10 +3,6 @@
     --lightbrown:#A19887;
     --firebrick:rgb(165,42,42);
 }
-body{
-    margin: 0;
-    padding: 0;
-}
 .content{
     height: 200px;
     max-width: 1200px;

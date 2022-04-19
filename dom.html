@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/logo.css">
-    <link rel="stylesheet" href="css/boy.css">
+    <link rel="stylesheet" href="css/robot.css">
+    <link rel="stylesheet" href="css/dom.css">
     <script defer src="js/dropdownmenu.js"></script>
+    <script defer src="js/dom.js"></script>
     <title>рА</title>
   </head>
   <body>
@@ -53,15 +55,19 @@
     <main>
      <section class="content-overflow">
        <h1 class="text-title">
-         задание - flexbox
+         задание - dom
        </h1>
-        <div class="flexbox">
-          <img src="img/boy/boy1.png" class="first">
-          <img src="img/boy/boy2.png" class="second">
-          <img src="img/boy/mini-boy7.png" class="third">
-          <span class="ball">Это мяч?...</span>
-          <span class="brick">Это кирпич...</span>
-          <img src="img/boy/boy3.png" class="forth">
+        <div class="domcontainer">
+            <div>
+                <button class="creation" onclick="Button_Create()">
+                    Создать
+                </button>
+                <button class="creation" onclick="Even_Odd()">
+                    Перекрасить
+                </button>
+                </div>
+              <div id="rand">
+              </div>
         </div>
       </section>
     </main>

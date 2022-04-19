@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/logo.css">
+    <script defer src="js/dropdownmenu.js"></script>
     <title>рА</title>
   </head>
   <body>
@@ -30,8 +31,16 @@
           <a href="index.html" class="header-nav-link dis">Главная</a>
           <a href="info.html" class="header-nav-link">Коты в авангарде</a>
           <a href="avangard.html" class="header-nav-link">Основные направления</a>
-          <a href="painting.html" class="header-nav-link">Задание рисунок</a>
-          <a href="flexbox-boy.html" class="header-nav-link">Задание flexbox</a>
+          <div class="dropdown">
+            <button onclick="dropMenu()" class="btn header-nav-link">
+              Задания <i class="fa fa-angle-down"></i>
+            </button>
+            <div class="dropdown-content" id="dropdownmenu">
+              <a href="painting.html" class="header-nav-link">рисунок</a>
+              <a href="flexbox-boy.html" class="header-nav-link">flexbox</a>
+              <a href="dom.html" class="header-nav-link">dom</a>
+            </div>
+          </div>
         </nav>
         <div class="icons-sources">
             <a href="https://www.youtube.com/watch?v=lUVVsRX-eEc" class="header-nav-link" >
