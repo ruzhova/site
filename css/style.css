@@ -127,6 +127,11 @@ body{
     padding-bottom: 10%;
     max-width: 1024px;
 }
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .fa-angle-left,
 .fa-angle-right{
@@ -141,7 +146,7 @@ body{
 }
 
 /* hint */
-.hint{
+.hint, .image-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,10 +170,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
-}
-.image-container{
-    align-items: center;
-    height: 500px;
 }
 
 /* flipping buttons */
@@ -226,4 +227,3 @@ footer{
         width: 95%;
     }
 }
-
