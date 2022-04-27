@@ -131,6 +131,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .fa-angle-left,
@@ -227,3 +228,4 @@ footer{
         width: 95%;
     }
 }
+

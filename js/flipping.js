@@ -13,6 +13,9 @@ function ImgFlipBack() {
     if (image.src.match()){
         i--;
         i%=imgs.length;
+        if (i<0){
+            i = imgs.length - 1;
+        }
     }
     image.src = imgs[i];
 }

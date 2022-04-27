@@ -8,12 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/menu.css">
     <script defer src="js/dropdownmenu.js"></script>
+    <script defer src="js/menu.js"></script>
     <title>рА</title>
   </head>
   <body>
     <div class="main-container"> 
-      <header class="header-container">
+      <header class="header-container" style="grid-template-columns: 1fr 2fr 2fr 1fr;">
         <a href="index.html" class="main-logo">
           <div class="square">
             <div class="circle-black">
@@ -27,6 +29,7 @@
             </div>
           </div>
         </a>
+        <div class="header-text-output" id="menu-output"></div>
         <nav class="header-nav">
           <a href="index.html" class="header-nav-link dis">Главная</a>
           <a href="info.html" class="header-nav-link">Коты в авангарде</a>
@@ -51,33 +54,18 @@
       </header> 
     </div>
     <main>
-     <section class="content-overflow">
-       <h1 class="text-title">
-         коты в русском авангарде
-       </h1>
-       <br>
-        <h4 class="smaller-title">
-          Наталья Гончарова - Натюрморт с кошкой
-        </h4>
-        <br>
-        <section class="image-container">
-          <img src="img/cat1.jpeg" id="image" alt="">
-        </section>
-        <br>
-        <h4 class="smaller-title">
-          КВ - Кот Авангард
-        </h4>
-        <br>
-        <section class="image-container">
-          <img src="img/cat2.jpeg" id="image" alt="">
-        </section>
-        <br>
-        <h4 class="smaller-title">
-          Алексей Ляпин - Кот Авангард
-        </h4>
-        <br>
-        <section class="image-container">
-          <img src="img/cat3.jpeg" id="image" alt="">
+      <section class="content-overflow" style="overflow: auto">
+        <h1 class="text-title">
+          задание - меню
+        </h1>
+        <aside>
+          меню
+        </aside>
+        <section class="content" style="float: right;">
+          <div class="text-container">
+            <textarea id="text-area" cols="40" rows="3" ></textarea>
+            <input id="but" class="take-apart" type="button" value="Разобрать" onclick="ReadMenu()">
+          </div>
         </section>
       </section>
     </main>
@@ -85,4 +73,4 @@
       <p>© 2022 рыжов<span style="color:red">А</span>настасия</p>    
     </footer>
   </body>
-</html> 
+</html>

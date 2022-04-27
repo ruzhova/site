@@ -1,0 +1,89 @@
+.take-apart, aside {
+    background-color: #f9f9f9; 
+    border: 1px solid black;
+    /* border-radius: 12px; */
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.text-container{
+    padding: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+aside {
+    margin-top: 32px;
+    float: left;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.text-output, .header-text-output,
+aside button{
+    width: 99%;
+    height: auto;
+    font-size: 13px;
+    background-color: white; 
+    border: 1px solid gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 14px;
+    min-height: 30px;
+}
+aside button:hover{
+    color: darkgray;
+}
+.header-text-output{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    /* max-width: 400px; */
+    /* overflow-wrap: normal; */
+    white-space: nowrap;
+    padding: 0;
+}
+.pclass{
+    padding: 0 5px 0 5px;
+    margin: 5px 0 5px 0;
+}
+/* .text-output .take-apart{
+    background-color: white; 
+    border: 1px solid gray;
+} */
+
+@media screen and (max-width: 860px){
+    textarea{
+        width:100%;
+        max-width: 300px;
+    }
+    .text-container{
+        padding: 30px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-container input{
+        width: 306px;
+    }
+    .text-output p {
+        width: 306px;
+    }
+}
+@media screen and (max-width: 695px){
+    textarea{
+        width:100%;
+        max-width: 200px;
+    }
+    .text-container input{
+        width: 206px;
+    }
+    .text-output p {
+        width: 206px;
+    }
+}
