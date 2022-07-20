@@ -1,7 +1,2 @@
-# Educatonal project
-## Site about the Russian avant-garde
-This project is available at:
-```
-https://ruzhova.github.io
-```
-### Author: Anastasia
+# Educatonal project - site about Russian avant-garde
+This site demonstrates the skills I gained while studying the web-development course at SPBSTU.
